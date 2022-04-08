@@ -13,7 +13,8 @@ import MetaData from "../layout/MetaData";
 const categories = [
   "Power Station",
   "Solar Dryer",
-  "Home appliance"
+  "Home Appliance",
+  "Food Items"
 ];
 
 const Products = ({ match }) => {
