@@ -30,7 +30,8 @@ const NewProduct = ({ history }) => {
   const categories = [
     "Power Station",
     "Solar Dryer",
-    "Home appliance"
+    "Home appliance",
+    "Food Items"
   ];
 
   useEffect(() => {
