@@ -13,7 +13,7 @@ import MetaData from "../layout/MetaData";
 const categories = [
   "Power Station",
   "Solar Dryer",
-  "Home Appliance",
+  "Home appliance",
   "Food Items"
 ];
 
