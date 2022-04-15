@@ -7,16 +7,12 @@
       - filter products
       - review a product
       - share a product
-    - wishlist
-      - add product to wishlist
-      - remove product from wishlist
     - cart managment
       - add a product in cart
       - change quantity in the cart
       - delete an product from cart
     - order managment
       - place an order
-      - cancel an order
       - update an order
       - list orders
         - track an order
@@ -32,17 +28,12 @@
       - forgot password
       - logout
       - delete an account
-    - signup: done
+    - signup: 
     - signin
     - contact us
     - about us
   
   - admin front / admin panel
-    - brand managment
-      - add brand: done
-      - update brand: done
-      - delete brand: done
-      - get brands: done
     - category managment
       - add category: done
       - update category: done
@@ -50,13 +41,13 @@
       - get categories: done
     - product management
       - add product: done
-      - upload/add/update image for a product: done
+      - upload/add/update image for a product: 
       - update product
-        - update attributes: done
-        - suspend product: done
-      - get all products: done
-      - delete product: done
-      - review management: done
+        - update attributes: 
+        - suspend product: 
+      - get all products:
+      - delete product: 
+      - review management:
     - user management
       - get alll users
       - update user
@@ -69,37 +60,49 @@
         - update delivery status
         - update products
       - delete order
-    - offer managment
-      - create an offer
-      - update an offer
-      - delete an offer
-      - get all offers
-    - signup: done
-    - signin: done
+    - signup: 
+    - signin:
     - analytics
 
+-----------------------------------------------------
 
-------------------------------------
-- user activation
-  - signup
-  - generate unique token 
-    - javascript random()
-    - guid: globally unique identifier
-    - uuid: universal unique identifier (npm install uuid)
-  - generate the unique link
-    - http://localhost:3000/user/activate/<token>
-  - send an email with the activation link with activation token
-  - user clicks on the link
-  - within the route (which is going to handle the activation)
-    - read the activation token from query string
-    - find the user associated with the token
-    - activate user (set the active column value to 1)
-    - reset the activation token (remove the token from the column)
+bakend/config
+config.env constants
+
+PORT=4000
 
 
-----------------------------------------------
-- forgot password
-  - email
-  - generate an OTP (random number of 4 digits)
-  - send the OTP to yours email
-  - reset the email
+DB_URL=
+
+JWT_SECRET=
+JWT_EXPIRE=
+
+COOKIE_EXPIRE=
+
+SMPT_SERVICE=
+
+SMPT_MAIL=
+
+SMPT_PASSWORD=
+
+SMTP_HOST=
+
+SMPT_PORT=
+
+CLOUDINARY_NAME=
+
+CLOUDINARY_API_KEY=
+
+CLOUDINARY_API_SECRET=
+
+STRIPE_API_KEY = 
+STRIPE_SECRET_KEY = 
+
+FRONTEND_URL=
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+To run this project first set The all ENV constants Then 
+cd backend yarn start
+cd frontend npm start
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
